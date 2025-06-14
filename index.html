@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso Amor | Dia dos Namorados</title>
+  <meta name="description" content="Uma celebração do nosso amor desde 05/07/2019">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#E94057" stroke="#E94057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+        </svg>
+        <span>Nosso Amor</span>
+      </a>
+      <nav class="nav-desktop">
+        <a href="#hero">Início</a>
+        <a href="#carousel">Fotos</a>
+        <a href="#dedicatorias">Mensagens</a>
+        <a href="#timeline">Nossa História</a>
+        <a href="#interactive">Surpresas</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu">
+      <nav>
+        <a href="#hero">Início</a>
+        <a href="#carousel">Fotos</a>
+        <a href="#dedicatorias">Mensagens</a>
+        <a href="#timeline">Nossa História</a>
+        <a href="#interactive">Surpresas</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hearts-bg" id="hearts-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Nosso Amor</h1>
+        <p class="subtitle">Cada momento ao seu lado é uma bênção. Obrigado por fazer parte da minha vida.</p>
+        
+        <div class="romantic-card counter-card">
+          <h2>Juntos há</h2>
+          <div class="counter-grid">
+            <div class="counter-item">
+              <div class="counter-value" id="years">0</div>
+              <div class="counter-label">anos</div>
+            </div>
+            <div class="counter-item">
+              <div class="counter-value" id="months">0</div>
+              <div class="counter-label">meses</div>
+            </div>
+            <div class="counter-item">
+              <div class="counter-value" id="days">0</div>
+              <div class="counter-label">dias</div>
+            </div>
+            <div class="counter-item">
+              <div class="counter-value" id="hours">0</div>
+              <div class="counter-label">horas</div>
+            </div>
+            <div class="counter-item">
+              <div class="counter-value" id="minutes">0</div>
+              <div class="counter-label">minutos</div>
+            </div>
+            <div class="counter-item">
+              <div class="counter-value" id="seconds">0</div>
+              <div class="counter-label">segundos</div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#carousel" class="romantic-button">Veja nossas memórias</a>
+
+        <div class="music-player-container">
+          <div class="music-player">
+            <div class="music-info">
+              <h3>Contramão</h3>
+              <p>Gustavo Mioto</p>
+            </div>
+            <div class="music-controls">
+              <button class="mute-button" aria-label="Silenciar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                </svg>
+              </button>
+              <button class="play-button" aria-label="Tocar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="music-progress">
+            <span class="current-time">0:00</span>
+            <input type="range" min="0" max="100" value="0" class="progress-bar">
+            <span class="duration">0:00</span>
+          </div>
+          <p class="music-caption">"Nossa música especial"</p>
+          <audio id="audio-player" src="audio/contramao-gustavo-mioto.mp3" preload="metadata" autoplay loop></audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel Section -->
+  <section id="carousel" class="carousel-section">
+    <div class="container">
+      <h2>Nossas Memórias</h2>
+      
+      <div class="carousel-container">
+        <div class="carousel-main">
+          <div class="carousel-slides" id="carousel-slides">
+            <!-- Slides serão inseridos via JavaScript -->
+          </div>
+          <button class="carousel-arrow prev" aria-label="Imagem anterior">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="carousel-arrow next" aria-label="Próxima imagem">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+        
+        <div class="carousel-indicators" id="carousel-indicators">
+          <!-- Indicadores serão inseridos via JavaScript -->
+        </div>
+        
+        <div class="carousel-thumbnails" id="carousel-thumbnails">
+          <!-- Miniaturas serão inseridas via JavaScript -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="image-modal" id="image-modal">
+      <button class="modal-close" aria-label="Fechar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-content">
+        <img src="/placeholder.svg" alt="" id="modal-image">
+        <p class="modal-caption" id="modal-caption"></p>
+      </div>
+      <button class="modal-arrow modal-prev" aria-label="Imagem anterior">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <button class="modal-arrow modal-next" aria-label="Próxima imagem">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- Dedicatórias Section -->
+  <section id="dedicatorias" class="dedicatorias-section">
+    <div class="container">
+      <h2>Dedicatórias de Amor</h2>
+      
+      <div class="messages-grid" id="messages-grid">
+        <!-- Mensagens serão inseridas via JavaScript -->
+      </div>
+      
+      <div class="message-form-container">
+        <div class="romantic-card">
+          <h3>Escreva sua própria mensagem</h3>
+          <textarea id="new-message" rows="4" placeholder="Escreva uma mensagem especial..."></textarea>
+          <button class="romantic-button" id="add-message-btn">Enviar com Amor</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section id="timeline" class="timeline-section">
+    <div class="container">
+      <h2>Nossa História</h2>
+      
+      <div class="timeline-container" id="timeline-container">
+        <!-- Timeline items serão inseridos via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Section -->
+  <section id="interactive" class="interactive-section">
+    <div class="container">
+      <h2>Surpresas para Você</h2>
+      
+      <div class="surprises-tabs">
+        <div class="tabs-buttons" id="tabs-buttons">
+          <!-- Botões de abas serão inseridos via JavaScript -->
+        </div>
+        
+        <div class="tab-content" id="tab-content">
+          <!-- Conteúdo das abas será inserido via JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-message">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+          </svg>
+          <span>Com todo meu amor</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+          </svg>
+        </div>
+        <p>Wallacy e Laísa - Desde 05/07/2019 e para sempre</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Music Button -->
+  <div class="floating-music-button" id="floating-music-button">
+    <div class="floating-music-panel" id="floating-music-panel">
+      <div class="floating-music-info">
+        <p class="floating-song-title">Contramão</p>
+        <p class="floating-artist">Gustavo Mioto</p>
+      </div>
+      <button class="floating-play-button" aria-label="Tocar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="play-icon">
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+      </button>
+    </div>
+    <button class="floating-button" aria-label="Controle de música">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 18V5l12-2v13"></path>
+        <circle cx="6" cy="18" r="3"></circle>
+        <circle cx="18" cy="16" r="3"></circle>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Custom Message Modal -->
+  <div class="message-modal" id="message-modal">
+    <div class="message-modal-content">
+      <div class="message-modal-header">
+        <h3>Mensagem Especial</h3>
+        <button class="message-modal-close" aria-label="Fechar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="message-modal-body">
+        <div class="message-hearts">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#E94057" stroke="#E94057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="message-heart left">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+          </svg>
+          <p id="random-message"></p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#E94057" stroke="#E94057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="message-heart right">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="message-modal-footer">
+        <button class="romantic-button" id="close-message-modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
