@@ -6,15 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Array de mensagens românticas para exibição aleatória
   const romanticMessages = [
-    "Seu popozão me deixa doido. Te amo muuuuito.",
+    "Mais um ano, de milhares que virão.",
     "Eu te amo mais a cada dia que passa. Você é o amor da minha vida e quero passar todos os meus dias ao seu lado. Feliz Dia dos Namorados!",
     "Cada momento ao seu lado é uma bênção. Seu sorriso ilumina meus dias e seu amor aquece meu coração. Te amo Dmaaaaaaais!",
     "Você é meu presente, meu futuro e meu para sempre. Obrigado por fazer parte da minha vida e torná-la tão especial.",
     "Nosso amor é como uma história sem fim, cheia de capítulos maravilhosos que escrevemos juntos. Mal posso esperar para ver o que vem pela frente.",
     "Você é o sonho que eu não sabia que tinha, a resposta para perguntas que eu ainda não havia feito. Te amo além das palavras.",
     "Meu coração bate mais forte quando estou com você. Cada momento juntos é um tesouro que guardo com carinho.",
-    "Seu amor transformou minha vida de maneiras que eu nunca imaginei possíveis. Obrigado por ser exatamente quem você é.",
-    "Você é o amor da minha vida, e cada vez me dá mais certeza de querer ser pai ao seu lado."
+    "Seu amor transformou minha vida de maneiras que eu nunca imaginei possíveis. Obrigado por ser exatamente quem você é."
   ]
 
   // Array para armazenar mensagens adicionadas pelo usuário
@@ -333,6 +332,17 @@ document.addEventListener("DOMContentLoaded", () => {
         alt: "Festa Junina.",
         caption: "Simples momentos juntos",
       },
+      {
+        src: "image/Sonserina.jpeg",
+        alt: "Macumbeiros Sonserina.",
+        caption: "Uma memória, só que não kkk",
+      },
+      {
+        src: "image/FestaJulina2025.jpeg",
+        alt: "Festa Julina 2025.",
+        caption: "Essa sim é memória S2.",
+      }
+
     ]
 
     let currentSlide = 0
@@ -532,9 +542,9 @@ document.addEventListener("DOMContentLoaded", () => {
           "Quando penso no futuro, só consigo imaginar você ao seu lado. Você é meu presente e meu amanhã, meu amor eterno.",
       },
       {
-        title: "Gratidão",
+        title: "Meu Tudo",
         content:
-          "Sou grato todos os dias por ter você em minha vida. Você me faz querer ser uma pessoa melhor a cada dia.",
+          "Não existe mais um eu sem você, por isso você é o meu tudo.",
       },
     ]
 
@@ -684,6 +694,33 @@ document.addEventListener("DOMContentLoaded", () => {
         memory:
           "Após um longo tempo de obras, compras para nosso apartamento, um período de descanso com a melhor companhia do mundo. Solto sorrisos bobos só de lembrar que terei isso para sempre.",
       },
+      {
+        date: "23/06/2025",
+        title: "O friozinho de Julho",
+        description: "Juntinhos como sempre, bem agasalhados, só esperando o evento no memorial.",
+        location: "Praia de Maresias",
+        image: "image/Julho2025.jpeg",
+        memory:
+          "Essa época de frio que você ama, na melhor companhia de sempre, juntinhos, quentinhos e felizes sempres, aguarando para curtir uma festa julina.",
+      },
+      {
+        date: "29/11/2025",
+        title: "Alelúia uma festa",
+        description: "Depois de anos, resolvi comemorar meu aniversário, e sempre com a melhor pessoa ao meu lado.",
+        location: "Praia de Maresias",
+        image: "image/Aniversario2025.jpeg",
+        memory:
+          "Mal sabía que ficaria de camiseta regada sem camisa kkkk, não houve fotos durante o dia, mas foi um dia maravilhoso, cheio de amor e alegria.",
+      },
+      {
+        date: "02/02/2025",
+        title: "Praia Dúvidosa",
+        description: "Nem sabíamos o que estava por vir.",
+        location: "Praia de Maresias",
+        image: "image/PraiaFevereiro2026.jpeg",
+        memory:
+          "Na doideira, fomos para a praia de metrô e onibus, e tivemos a surpresa de chegar na praia que menos parecia praia kkkkk, após muito andar, conseguimos curtir bem, até o ponto de almoçar dentro do ônibus.",
+      },
     ]
 
     const timelineContainer = document.getElementById("timeline-container")
@@ -810,7 +847,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <li>Seus olhos me encantam</li>
               <li>Seu abraço é meu porto seguro</li>
               <li>Sua determinação me faz querer ser melhor</li>
-              <li>Eu já amo braveza </li>
+              <li>Eu já amo sua braveza </li>
               <li>Seu amor me faz sentir o homem mais sortudo do mundo</li>
               <li>Sua companhia torna qualquer momento especial</li>
               <li>Seu apoio me dá forças para enfrentar qualquer desafio</li>
@@ -834,8 +871,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <p>Tenho uma surpresa especial preparada para você!</p>
             <div class="surprise-coupon">
               <h4>Cupom de Amor</h4>
-              <p>Este cupom dá direito a um dia especial, planejado com todo carinho, para celebrarmos nosso amor. Inclui jantar romântico, passeio especial e muito mais!</p>
-              <p class="small">Válido quando você quiser. Basta me avisar com antecedência.</p>
+              <p>Este cupom dá direito a nossa janta especial, momento que faremos juntos nosso jantar com muito amor e carinho!</p>
+              <p class="small">Válido para hoje e sempre.</p>
             </div>
           </div>
         `,
@@ -901,6 +938,15 @@ document.addEventListener("DOMContentLoaded", () => {
                     <p>Principalmente MLBB</p>
                   </div>
                   <span class="song-memory">Momento que pode nos tirar a paz mas eu amo.</span>
+                </div>
+              </div>
+              <div class="song-item">
+                <div class="song-header">
+                  <div class="song-info">
+                    <h5>Macumba</h5>
+                    <p>Giras e funções</p>
+                  </div>
+                  <span class="song-memory">Nossos "rolês" dos finais de semana.</span>
                 </div>
               </div>
             </div>
